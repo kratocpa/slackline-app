@@ -6,8 +6,10 @@ databases:
 services:
   - type: web
     name: slackline-backend
-    runtime: docker
-    dockerfilePath: ./backend/Dockerfile
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt && alembic upgrade head
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -22,11 +24,11 @@ services:
       - key: OAUTH_GOOGLE_CLIENT_SECRET
         sync: false
       - key: UPLOAD_DIR
-        value: /app/uploads
+        value: /tmp/uploads
       - key: ALLOWED_ORIGINS
         value: https://slackline-frontend.onrender.com
       - key: DATA_DIR
-        value: /app/data
+        value: /opt/render/project/src/data
     healthCheckPath: /api/v1/health
   - type: web
     name: slackline-frontend
