@@ -29,6 +29,10 @@ services:
         value: https://slackline-frontend.onrender.com
       - key: DATA_DIR
         value: /opt/render/project/src/data
+      - key: BACKEND_URL
+        value: https://slackline-backend.onrender.com
+      - key: FRONTEND_URL
+        value: https://slackline-frontend.onrender.com
     healthCheckPath: /api/v1/health
   - type: web
     name: slackline-frontend
