@@ -6,7 +6,6 @@ databases:
 services:
   - type: web
     name: slackline-backend
-    plan: free
     runtime: docker
     dockerfilePath: ./backend/Dockerfile
     envVars:
@@ -31,7 +30,6 @@ services:
     healthCheckPath: /api/v1/health
   - type: web
     name: slackline-frontend
-    plan: free
     runtime: static
     buildCommand: cd frontend && npm ci && npm run build
     staticPublishPath: frontend/dist
