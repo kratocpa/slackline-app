@@ -1,0 +1,49 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: slackline
+      POSTGRES_USER: slackline
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-slackline}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U slackline"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  backend:
+    build: ./backend
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+asyncpg://slackline:${DB_PASSWORD:-slackline}@db/slackline
+      SECRET_KEY: ${SECRET_KEY}
+      IMPORT_SECRET: ${IMPORT_SECRET}
+      OAUTH_GOOGLE_CLIENT_ID: ${OAUTH_GOOGLE_CLIENT_ID}
+      OAUTH_GOOGLE_CLIENT_SECRET: ${OAUTH_GOOGLE_CLIENT_SECRET}
+      BACKEND_URL: ${BACKEND_URL:-https://yourdomain.com}
+      FRONTEND_URL: ${FRONTEND_URL:-https://yourdomain.com}
+      UPLOAD_DIR: /app/uploads
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-https://yourdomain.com}
+      DATA_DIR: /app/data
+    volumes:
+      - ./data:/app/data
+      - uploads:/app/uploads
+    restart: unless-stopped
+    command: gunicorn -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000 --workers 2
+  frontend:
+    build:
+      context: ./frontend
+      target: production
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    restart: unless-stopped
+volumes:
+  pgdata:
+  uploads:

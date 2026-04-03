@@ -1,0 +1,52 @@
+databases:
+  - name: slackline-db
+    plan: free
+    databaseName: slackline
+    user: slackline
+services:
+  - type: web
+    name: slackline-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: slackline-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: IMPORT_SECRET
+        generateValue: true
+      - key: OAUTH_GOOGLE_CLIENT_ID
+        sync: false
+      - key: OAUTH_GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: UPLOAD_DIR
+        value: /app/uploads
+      - key: ALLOWED_ORIGINS
+        value: https://slackline-frontend.onrender.com
+      - key: DATA_DIR
+        value: /app/data
+    disk:
+      name: uploads
+      mountPath: /app/uploads
+      sizeGB: 1
+    healthCheckPath: /api/v1/health
+  - type: web
+    name: slackline-frontend
+    runtime: static
+    buildCommand: cd frontend && npm ci && npm run build
+    staticPublishPath: frontend/dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://slackline-backend.onrender.com
+    routes:
+      - type: rewrite
+        source: /api/*
+        destination: https://slackline-backend.onrender.com/api/*
+      - type: rewrite
+        source: /uploads/*
+        destination: https://slackline-backend.onrender.com/uploads/*
+      - type: rewrite
+        source: /*
+        destination: /index.html

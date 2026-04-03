@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="39095dad-98be-471a-bfb3-9e0664745b61" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/slackline.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AGENT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IMPLEMENTATION_PLAN.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/alembic.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/alembic/env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/alembic/script.py.mako" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/dependencies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/crossing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/history.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/slackline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routers/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routers/crossings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routers/diary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routers/history.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routers/import_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routers/slackliners.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routers/slacklines.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routers/statistics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/crossing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/history.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/slackline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/crossing_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/history_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/import_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/slackline_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/utils/image_upload.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/create_admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/components_point_anchor_points_202211171655.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/slackline_records_202211171655.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/slackline_records_slackline_links_202211171655.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/slackline_records_users_permissions_user_links_202211171655.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/slacklines_202211171655.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/slacklines_components_202211171655.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/vite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/hooks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/fonts.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Auth/LoginButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/CrossingForm/CrossingForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Map/LeafletMap.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SlacklineDetail/CrossingsTab.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SlacklineDetail/HistoryTab.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SlacklineDetail/InfoTab.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SlacklineDetail/PhotosTab.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SlacklineDetail/StatisticsTab.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SlacklineForm/SlacklineForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SlacklineTable/DiaryStatsPanel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SlacklineTable/DiaryTable.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SlacklineTable/FilterBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SlacklineTable/SlacklineTable.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SlacklineTable/SlacklinersTable.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SlacklineTable/UserStatsPanel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/AuthCallbackPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/HomePage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/SlacklineDetailPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/authStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/filterStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/mapStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/types/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/vite-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/vite.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/render.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/home/pavel/claude/slackline" value="3Avt61cKuAbnBwfihPffdCogFVh" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="chat-panel" value="Claude Sonnet 4.6" />
+      <entry key="agent-panel" value="Claude Sonnet 4.6" />
+    </selectedModels>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="103" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3Avt61cKuAbnBwfihPffdCogFVh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/pavel/PycharmProjects/slackline&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.30387.173" />
+        <option value="bundled-python-sdk-4762d8aabb82-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.30387.173" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="39095dad-98be-471a-bfb3-9e0664745b61" name="Changes" comment="" />
+      <created>1773484693128</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773484693128</updated>
+      <workItem from="1773484694183" duration="23134000" />
+      <workItem from="1773561320304" duration="13306000" />
+      <workItem from="1773582123521" duration="6189000" />
+      <workItem from="1773598547735" duration="637000" />
+      <workItem from="1773682840310" duration="7300000" />
+      <workItem from="1773777644425" duration="372000" />
+      <workItem from="1774983953298" duration="422000" />
+      <workItem from="1775204580330" duration="2747000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/backend/app/models/history.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/backend/app/routers/crossings.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
