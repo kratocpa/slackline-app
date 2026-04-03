@@ -6,6 +6,7 @@ databases:
 services:
   - type: web
     name: slackline-backend
+    plan: free
     runtime: docker
     dockerfilePath: ./backend/Dockerfile
     envVars:
@@ -27,13 +28,10 @@ services:
         value: https://slackline-frontend.onrender.com
       - key: DATA_DIR
         value: /app/data
-    disk:
-      name: uploads
-      mountPath: /app/uploads
-      sizeGB: 1
     healthCheckPath: /api/v1/health
   - type: web
     name: slackline-frontend
+    plan: free
     runtime: static
     buildCommand: cd frontend && npm ci && npm run build
     staticPublishPath: frontend/dist
